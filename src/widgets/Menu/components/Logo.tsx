@@ -18,16 +18,16 @@ const StyledLink = styled(Link) <{ isPushed: boolean }>`
   align-items: center;
 
   & > div {
-    margin-left: 28px;
-    margin-top: 18px;
+    margin-left: 24px;
+    margin-top: 11px;
 
     ${({ theme }) => theme.mediaQueries.nav} {
-      margin-left: ${({isPushed}) => isPushed ? '28px' : '6px'};
+      margin-left: ${({isPushed}) => isPushed ? '12px' : '6px'};
     }
   }
 
   .mobile-icon {
-    width: ${({ isPushed }) => isPushed ? '136px' : '40px'};
+    width: ${({ isPushed }) => isPushed ? '160px' : '40px'};
     height: auto;
 
     ${({ theme }) => theme.mediaQueries.nav} {
@@ -36,7 +36,7 @@ const StyledLink = styled(Link) <{ isPushed: boolean }>`
   }
 
   .desktop-icon {
-    width: ${({ isPushed }) => isPushed ? '136px' : '40px'};
+    width: ${({ isPushed }) => isPushed ? '200px' : '40px'};
     height: auto;
     display: none;
 
@@ -108,11 +108,11 @@ const Logo: React.FC<Props> = ({ isPushed, togglePush, isDark, href }) => {
         {isPushed ? <ChevronLeft width="24px" color="textSubtle" /> : <ChevronRight width="24px" color="textSubtle" />}
       </StyledMenuButton>
       {isAbsoluteUrl ? (
-        <StyledLink as="a" href={href} isPushed={isPushed} aria-label="Baker home page">
+        <StyledLink as="a" href={href} isPushed={isPushed} aria-label="PrimeStake Finance home page">
           {innerLogo}
         </StyledLink>
       ) : (
-        <StyledLink to={href} isPushed={isPushed} aria-label="Baker home page">
+        <StyledLink to={href} isPushed={isPushed} aria-label="PrimeStake Finance home page">
           {innerLogo}
         </StyledLink>
       )}
@@ -127,11 +127,11 @@ const Logo: React.FC<Props> = ({ isPushed, togglePush, isDark, href }) => {
         )}
       </StyledMenuButton>
       {isAbsoluteUrl ? (
-        <StyledLink as="a" href={href} isPushed={isPushed} aria-label="Baker home page">
+        <StyledLink as="a" href={href} isPushed={isPushed} aria-label="PrimeStake Finance home page">
           {innerLogo}
         </StyledLink>
       ) : (
-        <StyledLink to={href} isPushed={isPushed} aria-label="Baker home page">
+        <StyledLink to={href} isPushed={isPushed} aria-label="PrimeStake Finance home page">
           {innerLogo}
         </StyledLink>
       )}
