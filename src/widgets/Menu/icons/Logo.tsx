@@ -38,8 +38,8 @@ const Logo: React.FC<LogoProps> = ({ isDark, isPushed, ...props }) => {
   return (
     <IconContainer>
       {isPushed
-        ? <img {...props} src="/images/bakerswap-logo.png" alt="Bakerswap logo" width="640" height="271" />
-        : <img {...props} src="/images/bakerswap-logo-mobile.png" alt="Bakerswap logo" width="512" height="512" />}
+        ? <img {...props} src="/images/logo-expanded.png" alt="Logo Expanded" width="640" height="145" />
+        : <img {...props} src="/images/logo-condensed.png" alt="Logo Condensed" width="512" height="512" />}
 
       {/* {isPushed ? (
         <span className="desktop-icon" style={{ color: "#52D784", marginLeft: "30px", fontSize: "20px" }}>
