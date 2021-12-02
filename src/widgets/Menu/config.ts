@@ -136,15 +136,15 @@ export const links = [
 ];
 
 export const socials = [
-  {
-    label: "Youtube",
-    icon: "YoutubeIcon",
-    href: "",
-  },
+  // {
+  //   label: "Youtube",
+  //   icon: "YoutubeIcon",
+  //   href: "",
+  // },
   {
     label: "Telegram",
     icon: "TelegramIcon",
-    href: "https://t.me/bakerguild",
+    href: "",
   },
   {
     label: "Discord",
@@ -154,7 +154,7 @@ export const socials = [
   {
     label: "Twitter",
     icon: "TwitterIcon",
-    href: "https://twitter.com/BakerGuild",
+    href: "",
   },
 ];
 
